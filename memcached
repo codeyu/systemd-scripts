@@ -1,0 +1,6 @@
+# cat /etc/sysconfig/memcached 
+PORT="11211"
+USER="memcached"
+MAXCONN="2000"
+CACHESIZE="128"
+OPTIONS=""

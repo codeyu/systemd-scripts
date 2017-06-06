@@ -1,0 +1,15 @@
+[Unit]
+Description=MySQL Community Server
+After=network.target
+After=syslog.target
+[Install]
+WantedBy=multi-user.target
+Alias=mysql.service
+[Service]
+User=mysql
+Group=mysql
+PermissionsStartOnly=true
+ExecStart=/opt/mysql/bin/mysqld_safe
+TimeoutSec=600
+Restart=always
+PrivateTmp=false
